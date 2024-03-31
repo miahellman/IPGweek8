@@ -50,7 +50,11 @@
                 float3 color = 0;
                 //sample tex w UVs 
                 //subtract from 1 to invert colors
-                color = 1 - tex2D(_MainTex, i.uv);
+                //color = 1 - tex2D(_MainTex, i.uv);
+                color = tex2D(_MainTex, i.uv);
+
+                //red filter
+                color = float3(color.r, 0, 0);
 
                 return float4(color, 1.0);
             }

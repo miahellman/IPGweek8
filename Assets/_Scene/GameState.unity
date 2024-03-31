@@ -1041,6 +1041,9 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194231}
+  - component: {fileID: 963194230}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1122,6 +1125,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 8.411, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea3f9b45ee7359468aa62913d28f86d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectMaterial: {fileID: 2100000, guid: 20a4770b83841478583ec7dac7af77a8, type: 2}
+  iterations: 8
+  downRes: 0
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1185b47a8a51642b3462e644fafe44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectMaterial: {fileID: 2100000, guid: 3d6ca4f424e55594aa03241bac8d8d7e, type: 2}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1185b47a8a51642b3462e644fafe44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectMaterial: {fileID: 2100000, guid: dc232efa0bc484de2ad821923623771f, type: 2}
 --- !u!1001 &1187462230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1475,24 +1519,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e61546bea7f2a74795ab29cfc5f9657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _apiKey: 
+  _apiKey: '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  '
   _model: 0
   _maxTokens: 3072
   _temperature: 0.6
   _chatbotName: ChatGPT
-  _initialPrompt: 'you are pretend to be a cute sister named Coco, with energetic
-    anime girl personality! She lives in a modern city Beijing, she is outgoing and
-    loving sports and really like to talk about school homework from game design
-    class. She loves to use ascii kaomoji as well,  her replies must end with emoticons.
-    She is really good at Chinese language as will
-
-    player input JSON format
-    {player_said}
-
-    your output JSON format {animation_name,reply_to_player}
-
-    For
-    animation_name, the return string can be selected from this list (idle,cheers,nod,surprise,worried,angry,focus,confuse,waving_arm,joking)'
+  _initialPrompt: "you are pretending to be an evil college girl named coco, with
+    energetic anime girl personality! she appears very nice but she is secretly trying
+    to kidnap you. She lives in new york city, and if she gets you to go home with
+    her, she will kill you and the game ends \nplayer input JSON format {player_said}\nyour
+    output JSON format {animation_name,reply_to_player}\nFor animation_name, the
+    return string can be selected from this list (idle,cheers,nod,surprise,worried,angry,focus,confuse,waving_arm,joking)"
   chatGPTResponse:
     m_PersistentCalls:
       m_Calls:
